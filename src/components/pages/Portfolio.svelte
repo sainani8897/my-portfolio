@@ -10,13 +10,16 @@
   } from "sveltestrap";
   let open = false;
   let size = "";
+  let portfolioData = {};
   const toggle = () => {
     size = undefined;
     open = !open;
   };
-  const toggleLg = () => {
+  const toggleLg = (data) => {
     size = "lg";
     open = !open;
+    portfolioData = data;
+    //console.log(portfolioData);
   };
   const toggleSm = () => {
     size = "sm";
@@ -47,7 +50,9 @@
     <!-- Portfolio Grid Items-->
     <div class="row justify-content-center">
       <!-- Portfolio Item 1-->
-      <div class="col-md-6 col-lg-4 mb-5" on:click={toggleLg}>
+      <div class="col-md-6 col-lg-4 mb-5"  on:click={() => {
+        toggleLg({ img: "assets/img/portfolio/bi-2.png",content:"Hive BI is an Bussiness Intelligence (ERP & CMS) Application.",title:"HIVE BI" });
+      }}>
         <div
           class="portfolio-item mx-auto"
           data-bs-toggle="modal"
@@ -62,13 +67,18 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/cabin.png"
+            src="assets/img/portfolio/bi-2.png"
             alt="..."
           />
         </div>
       </div>
       <!-- Portfolio Item 2-->
-      <div class="col-md-6 col-lg-4 mb-5">
+      <div
+        class="col-md-6 col-lg-4 mb-5"
+        on:click={() => {
+          toggleLg({ img: "assets/img/portfolio/covid-help-source.png",content:"",title:"Covid Resource" });
+        }}
+      >
         <div
           class="portfolio-item mx-auto"
           data-bs-toggle="modal"
@@ -83,7 +93,7 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/cake.png"
+            src="assets/img/portfolio/covid-help-source1.png"
             alt="..."
           />
         </div>
@@ -406,7 +416,7 @@
         <div class="col-lg-8">
           <!-- Portfolio Modal - Title-->
           <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
-            Log Cabin
+            {portfolioData.title ?? ''}
           </h2>
           <!-- Icon Divider-->
           <div class="divider-custom">
@@ -417,15 +427,12 @@
           <!-- Portfolio Modal - Image-->
           <img
             class="img-fluid rounded mb-5"
-            src="assets/img/portfolio/cabin.png"
+            src="{portfolioData.img ?? ''}"
             alt="..."
           />
           <!-- Portfolio Modal - Text-->
           <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-            neque assumenda ipsam nihil, molestias magnam, recusandae quos quis
-            inventore quisquam velit asperiores, vitae? Reprehenderit soluta,
-            eos quod consequuntur itaque. Nam.
+            {portfolioData.content ?? ''}
           </p>
         </div>
       </div>
@@ -436,9 +443,9 @@
   </ModalFooter>
 </Modal>
 
-<style>  
-.portfolio-modal-title  {
+<style>
+  .portfolio-modal-title {
     text-align: center;
     justify-content: center;
-}
+  }
 </style>
