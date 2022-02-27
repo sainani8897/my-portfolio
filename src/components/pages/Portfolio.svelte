@@ -155,6 +155,9 @@
         >
           <div
             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+            on:click={() => {
+              toggleLg({ img: "assets/img/portfolio/MyVerkoperhome.png",content:"MyVerkoper is India's first exclusive e-commerce B2B marketplace that connects Sellers and Educational Institutions across India. If you are an Educational Institution looking to source your requirements from a wide range of products/services from Sellers across India, MyVerkoper is the one-stop buying destination for you. MyVerkoper is a user-friendly platform engineered to address all the procurement needs of Educational Institutions in a quick and smart manner. Simplify your buying with MyVerkoper.",title:"Myverkoper" });
+            }}
           >
             <div class="portfolio-item-caption-content text-center text-white">
               <i class="fas fa-plus fa-3x" />
@@ -162,7 +165,7 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/safe.png"
+            src="assets/img/portfolio/MyVerkoperhome.png"
             alt="..."
           />
         </div>
@@ -196,7 +199,7 @@
   <div class="container">
     <!-- About Section Heading-->
     <h2 class="page-section-heading text-center text-uppercase text-white">
-      About
+      About Me
     </h2>
     <!-- Icon Divider-->
     <div class="divider-custom divider-light">
@@ -206,21 +209,22 @@
     </div>
     <!-- About Section Content-->
     <div class="row">
-      <div class="col-lg-4 ms-auto">
+      <div class="col-lg-12 ms-auto text-center">
         <p class="lead">
-          Freelancer is a free bootstrap theme created by Start Bootstrap. The
-          download includes the complete source files including HTML, CSS, and
-          JavaScript as well as optional SASS stylesheets for easy
-          customization.
+         I am Sainath Dekonda a fulltime Fullstack developer with 4+ years of experience in field of Web development
+         where my major part work goes into backend development and  mainly into PHP & Node.js. 
+         and with additional Knowledge in Deployment and Server Maintaince Using Tools (aws,Docker).
+         and my current interest are into BlockChain, NFTS, Crypto, Web 3.0 and Decentralized Finance (DeFi).
+         <br>For More details click the link below for Resume.
         </p>
       </div>
-      <div class="col-lg-4 me-auto">
+      <!-- <div class="col-lg-4 me-auto">
         <p class="lead">
           You can create your own custom avatar for the masthead, change the
           icon in the dividers, and add your email address to the contact form
           to make it fully functional!
         </p>
-      </div>
+      </div> -->
     </div>
     <!-- About Section Button-->
     <div class="text-center mt-4">

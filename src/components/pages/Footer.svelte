@@ -20,9 +20,9 @@
             </div>
             <!-- Footer About Text-->
             <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">About Me</h4>
+                <h4 class="text-uppercase mb-4">Credits</h4>
                 <p class="lead mb-0">
-                    Freelance is a free to use, MIT licensed Bootstrap theme created by
+                    Theme is from Freelance an MIT licensed Bootstrap theme created by
                     <a href="http://startbootstrap.com">Start Bootstrap</a>
                     .
                 </p>
@@ -32,5 +32,5 @@
 </footer>
 <!-- Copyright Section-->
 <div class="copyright py-4 text-center text-white">
-    <div class="container"><small>Copyright &copy; Your Website 2021</small></div>
+    <div class="container"><small>Copyright &copy; Sainath Dekonda 2021</small></div>
 </div>
