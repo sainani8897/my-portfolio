@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "sirv-cli": "^2.0.0",
+    "svelte-youtube": "^0.0.2",
     "sveltestrap": "^5.8.3"
   }
 }

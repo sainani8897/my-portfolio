@@ -107,6 +107,9 @@
         >
           <div
             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+            on:click={() => {
+              toggleLg({ img: "assets/img/portfolio/24-7-kirana-dashboardmobile-home.png",content:"24x7 Kirana is online grocery store. With over 1,000 products and over a 100 brands in our catalogue you will find everything. Buy premium quality of grocery like atta, rice, dal, spices, and masala online from home with free shipping option and get it delivered anywhere in the Hyderabad. Choose from a wide range of options in every category, you find the best quality available at the lowest prices. Select a time slot for delivery and your order will be delivered right to your doorstep, anywhere in Hyderabad.",title:"24x7 KIRANA" });
+            }}
           >
             <div class="portfolio-item-caption-content text-center text-white">
               <i class="fas fa-plus fa-3x" />
@@ -114,7 +117,7 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/circus.png"
+            src="assets/img/portfolio/24-7-kirana-dashboardmobile-home.png"
             alt="..."
           />
         </div>
@@ -128,6 +131,9 @@
         >
           <div
             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+            on:click={() => {
+              toggleLg({ img: "assets/img/portfolio/property-nidhihome.png",content:"Property Nidhi.com is providing all the information clearly about the real estate business. In India, real estate is an industry that is developing day by day with lightning speed. The real estate sector brings a lot of profits to the people who are investing in it. People use many e-portals to get information about the property services but not satisfied with the incomplete information they are providing. Propertynidhi.com is a website where you can find all the information about the property, property services, and more information related to the real estate business. You can find a good property with a reasonable investment in a short period. We respect and care about our clients. We provide the services in such a way that our users get benefited through it. Taking all the precautions while you are investing in the property will be helpful for your future generations too. Use all the services of propertynidhi.com and make your dreams real.",title:"Property Nidhi" });
+            }}
           >
             <div class="portfolio-item-caption-content text-center text-white">
               <i class="fas fa-plus fa-3x" />
@@ -135,8 +141,8 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/game.png"
-            alt="..."
+            src="assets/img/portfolio/property-nidhihome.png"
+            alt="property-home"
           />
         </div>
       </div>
@@ -431,6 +437,8 @@
             alt="..."
           />
           <!-- Portfolio Modal - Text-->
+
+          
           <p class="mb-4">
             {portfolioData.content ?? ''}
           </p>
