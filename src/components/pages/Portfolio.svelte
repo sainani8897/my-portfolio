@@ -179,6 +179,9 @@
         >
           <div
             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+            on:click={() => {
+              toggleLg({ img: "assets/img/portfolio/bull-trendsbt-portfolio.png",content:"Bull Trends is a  financial application that provides real-time information about stocks, market trends, business news, financials, patterns, network to communicate securely and for free. The Bull Trends application is at the heart of state-of-the-art data processing, analysis, ML software product which uses our proprietary financial algorithms, enables users to make more profitable trading decisions",title:"Bull Trends" });
+            }}
           >
             <div class="portfolio-item-caption-content text-center text-white">
               <i class="fas fa-plus fa-3x" />
@@ -186,7 +189,7 @@
           </div>
           <img
             class="img-fluid"
-            src="assets/img/portfolio/submarine.png"
+            src="assets/img/portfolio/bull-trendsbt-portfolio.png"
             alt="..."
           />
         </div>
